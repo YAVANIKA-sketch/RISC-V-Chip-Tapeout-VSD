@@ -28,11 +28,14 @@ sudo make install
 
 ![yosys installation](https://github.com/user-attachments/assets/385df0a8-ef89-44fc-8022-a83909236f30)
 
-
 # Icarus Verilog (iverilog)
 sudo apt-get update
 sudo apt-get install iverilog
 
+![iverilog installation](https://github.com/user-attachments/assets/1d3edfab-2c55-409c-b55d-254715c9875c)
+
 # GTKWave (Waveform Viewer)
 sudo apt-get update
 sudo apt install gtkwave
+
+![gtkwave installation](https://github.com/user-attachments/assets/d56f9f8b-d8bb-4c29-8c1c-1ceef5d8bba9)
