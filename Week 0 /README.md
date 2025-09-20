@@ -1,22 +1,38 @@
-# RISC-V-Chip-Tapeout-VSD
-🌱 Starting a new journey with the India RISC-V Tapeout Program.
-India’s largest academic tapeout initiative with 3500+ participants! Excited to contribute to open-source silicon design, verification, and innovation, as we work together to build the nation’s semiconductor future.
-# Ojective🎯
-To build India’s largest online academic tapeout initiative, enabling students, researchers, and professionals to collaboratively design, verify, and tape out silicon.
+# Day 0
+# Task 0
 
-To develop and scale national chip design talent by providing hands-on experience with RISC-V architecture and open-source tools.
+# Install Required Tools
+Use the machine configuration mentioned below:
+RAM: 6 GB
+HDD: 50 GB
+OS: Ubuntu 20.04+
+CPU: 4 vCPU
 
-To promote open-source semiconductor innovation and create opportunities for startups, academia, and industry.
-To strengthen India’s semiconductor ecosystem and contribute toward self-reliance in chip design and fabrication.
+Installation Instructions
+ Oracle Virtual Machine
+Download VirtualBox: https://www.virtualbox.org/wiki/Downloads
 
-# Acknowledgement🙏
-I sincerely thank Dr. Rajat Moona, Director of IIT Gandhinagar, for inspiring the community and setting a bold vision for India’s semiconductor talent development.
 
-Gratitude to Samir Patel and the India Semiconductor Mission for their unwavering support in shaping India’s self-reliant semiconductor journey.
+# Yosys (Verilog Synthesis Tool)
+sudo apt-get update
+git clone https://github.com/YosysHQ/yosys.git
+cd yosys
+sudo apt install make           # if not installed
+sudo apt-get install build-essential clang bison flex \
+libreadline-dev gawk tcl-dev libffi-dev git \
+graphviz xdot pkg-config python3 libboost-system-dev \
+libboost-python-dev libboost-filesystem-dev zlib1g-dev
+make config-gcc
+make
+sudo make install
 
-Special thanks to Mohamed Kassem for his pioneering work in open-source hardware and for enabling opportunities for students and startups worldwide.
+![yosys installation](https://github.com/user-attachments/assets/385df0a8-ef89-44fc-8022-a83909236f30)
 
-I also acknowledge all the participants, mentors, and organizers of the India RISC-V Tapeout Program for fostering a collaborative and innovative learning environment.
 
-# Link🔗
-Official Website: https://vsdiat.com/
+# Icarus Verilog (iverilog)
+sudo apt-get update
+sudo apt-get install iverilog
+
+# GTKWave (Waveform Viewer)
+sudo apt-get update
+sudo apt install gtkwave
