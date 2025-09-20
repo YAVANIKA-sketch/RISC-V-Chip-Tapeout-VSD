@@ -1,5 +1,4 @@
-# Day 0
-# Task 0
+# Day 0 # Task 0
 
 # Install Required Tools
 Use the machine configuration mentioned below:
@@ -20,6 +19,7 @@ Download VirtualBox: https://www.virtualbox.org/wiki/Downloads
 🔧 Yosys is essential for synthesizing your RTL into gate-level designs.
 
 🚀Installation steps:
+
 sudo apt-get update
 git clone https://github.com/YosysHQ/yosys.git
 cd yosys
@@ -38,6 +38,7 @@ sudo make install
 🔧 Icarus Verilog is ideal for compiling and simulating your RTL designs before synthesis.
 
 🚀Installation steps:
+
 sudo apt-get update
 
 sudo apt-get install iverilog
@@ -48,6 +49,7 @@ sudo apt-get install iverilog
 🔧 GTKWave helps you debug and inspect your Verilog simulations visually—essential for understanding RTL behavior.
 
 🚀Installation steps:
+
 sudo apt-get update
 
 sudo apt install gtkwave
