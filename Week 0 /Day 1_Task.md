@@ -168,7 +168,7 @@ Optimized – The library cells are designed for area, speed, and power.
 
 Technology-specific – Makes it easier to target a real chip process.
 
-# Task3 🛠️Synthesizing MUX
+# Task3 🛠️Synthesis
 
 🛠️ What is Synthesis?
 
