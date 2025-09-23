@@ -1,4 +1,4 @@
-#Task 0 # 🖥️ Running the MUX Simulation
+#Task 0 🖥️Running the MUX Simulation
 # Let’s go step by step on how you go from RTL code (good_mux.v) to a synthesized netlist using a tool like Yosys.
 Step 1: Write RTL Code
 
@@ -140,7 +140,7 @@ When sel = 0 → y = i0
 
 When sel = 1 → y = i1
 ```
-# Task 2 #Library
+# Task 2 📁 Library
 
 📁 What is Library?
 
@@ -168,9 +168,10 @@ Optimized – The library cells are designed for area, speed, and power.
 
 Technology-specific – Makes it easier to target a real chip process.
 
-# Task3  # Synthesizing MUX
+# Task3 🛠️Synthesizing MUX
 
 🛠️ What is Synthesis?
+
 Synthesis is the process of converting your high-level Verilog code (RTL) into a gate-level netlist, which is a structural description of your circuit using basic logic gates. The output of this process is a new Verilog file that represents the synthesized circuit.
 
 📜 Commands Used
