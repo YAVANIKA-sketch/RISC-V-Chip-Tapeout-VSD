@@ -126,7 +126,7 @@ iverilog -o good_mux_tb good_mux.v tb_good_mux.v
 ```
 Run the simulation
   ```
-./good_mux_tb
+./a.out good_mux_tb
 ```
 Open the waveform in GTKWave
   ```
