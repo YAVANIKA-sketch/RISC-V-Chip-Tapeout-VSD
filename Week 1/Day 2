@@ -1,0 +1,23 @@
+# Week 1 
+Day 2 - Timing Libraries, Hierarchical vs Flat Synthesis, and Flop Coding Styles
+
+ 📘 Introduction to Timing `.lib` Files
+- Learned about **timing libraries (.lib)** which describe the **delay, area, and power characteristics** of standard cells.
+- `.lib` files are crucial for **synthesis and timing analysis** since they guide how RTL maps to real hardware.
+
+🏗️ Hierarchical vs Flat Synthesis
+- Hierarchical Synthesis:
+  - Preserves module boundaries.
+  - Easier debugging and modular design reuse.
+  - Slightly less optimization across boundaries.
+- Flat Synthesis:
+  - Breaks down hierarchy into one flat netlist.
+  - Allows better optimization (speed/area/power).
+  - Harder to debug and less modular.
+ 
+🔄 Flop Coding Styles & Optimization
+- Explored different ways to code flip-flops in Verilog.
+- Observed how reset styles (async/sync) and coding practices affect synthesis results.
+- Learned efficient styles to reduce redundant logic and improve timing closure.
+
+---
