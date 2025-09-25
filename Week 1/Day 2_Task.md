@@ -242,4 +242,46 @@ endmodule
 ```
 <img width="1920" height="909" alt="synthesis multiple_modules_flat" src="https://github.com/user-attachments/assets/34b110f4-5078-4072-8a58-fea882499ef0" />
 
+# Flops and glitches 
+Explore the foundational concepts of sequential digital logic—specifically latches, flip-flops, and the critical timing phenomenon known as glitches (or hazards). These elements are the building blocks for memory, registers, and complex finite state machines (FSMs) in all modern digital systems.
+
+1. Latches and Flip-Flops (The Memory Elements)
+   
+Latches and flip-flops are bistable multivibrators, meaning they have two stable states (0 and 1) and are the basic units for storing a single bit of information. The key difference lies in how they are triggered to change their stored state:
+
+Latches (Level-Triggered)
+Triggering: They are level-sensitive or transparent. The output can change (become "transparent" to the input) for the entire duration that the enable signal (or clock level) is active (e.g., when the clock is HIGH).
+
+Use: Often used in asynchronous circuits or as building blocks for flip-flops.
+
+Common Types: SR Latch, D Latch.
+
+Disadvantage: Can lead to unpredictable behavior if inputs change while the enable signal is active, causing race conditions or making it hard to synchronize data.
+
+Flip-Flops (Edge-Triggered)
+Triggering: They are edge-triggered. The output only changes state at a single, precise moment—either the rising edge (LOW to HIGH transition) or the falling edge (HIGH to LOW transition) of the clock signal.
+
+Use: Essential components in synchronous circuits, like registers, counters, and FSMs, as they ensure all state changes are synchronized to the clock.
+
+Common Types:
+
+D (Data) Flip-Flop: The most common type. The output Q takes the value of the input D on the active clock edge. It's used for simple data storage and synchronization.
+
+T (Toggle) Flip-Flop: Toggles its output state on the active clock edge if the input T is HIGH. Useful for building counters and frequency dividers.
+
+JK Flip-Flop: A more versatile type that can Set, Reset, Hold, or Toggle based on the inputs J and K.
+
+2. Glitches and Hazards (Timing Issues)
+A glitch is a temporary, unwanted pulse or "spike" that occurs at the output of a combinational logic circuit. A hazard is the potential for a glitch to occur due to unbalanced propagation delays within the circuit.
+
+Impact of Glitches
+Combinational Circuits: In pure combinational logic, a glitch is often benign.
+
+Sequential Circuits (The Danger Zone): If the output of a combinational circuit with a glitch is fed into the data input of a level-sensitive latch or the control input of an edge-triggered flip-flop, the momentary spike can be misinterpreted as a valid data change, causing the entire sequential circuit to enter an incorrect state.
+
+Mitigation Techniques
+Hazard-Free Design: For combinational logic feeding sensitive circuits, one can add redundant gates to the logic expression (using the consensus theorem on a Karnaugh Map) to eliminate static hazards.
+
+Synchronous Design: Using edge-triggered flip-flops (like the D-FF) and ensuring that the clock is the only signal controlling the memory elements prevents intermediate glitches from combinational logic from being stored. The flip-flop only samples the data input after the combinational logic has settled.
+
 
