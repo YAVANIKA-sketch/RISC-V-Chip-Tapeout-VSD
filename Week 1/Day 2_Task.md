@@ -89,7 +89,7 @@ Synthesis is the process of converting RTL (Register Transfer Level) code (like 
 
    Use: The standard approach for large designs to manage complexity and runtime, using a timing budget/floorplan to meet top-level constraints.
 
-# ⚙️Commands
+⚙️Commands
 ```
 read_verilog mupltiple_modules.v
 synth -top multiple_modules
@@ -110,7 +110,7 @@ write multiple_modules_hier.v
     Cons: Extremely long runtimes and high memory usage for very large designs.
 
     Use: Recommended for small to medium-sized designs or for the final optimization of critical, small blocks.
-
+⚙️Commands
 ```
 read_verilog mupltiple_modules.v
 synth -top multiple_modules
