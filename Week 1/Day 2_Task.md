@@ -46,24 +46,6 @@ Modules and submodules are fundamental concepts in both software engineering and
 
 Modularity is the design principle of breaking down a large, complex system into smaller, self-contained, and manageable units.
 
-1. Module is the foundational building block of a system. 
-
-    It is a major, self-contained unit that provides a specific, cohesive function.
-
-    Represents a broad functionality, major component, or subsystem.
-
-    Sits at a higher level; it may contain one or more submodules.
-
-    Interacts with other modules and the top-level system via a well-defined interface (ports, APIs).
-
-2. Submodule is a nested unit or a child of a main module. It handles a more specific or detailed aspect of the parent module's overall function.
-
-   Represents a detailed function, internal component, or sub-function within the parent module.
-
-   Sits at a lower level; it is instantiated or called by its parent module.
-
-   Primarily interacts with its parent module and other submodules within the same parent.
-
 # Modules and Submodules in Digital Hardware Design (HDL)
 
 In Hardware Description Languages like Verilog or VHDL, a module is the primary container for describing a piece of hardware. This structure directly implements the principle of hierarchical design.
