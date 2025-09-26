@@ -1,4 +1,4 @@
-# Day 1 Task 
+# Week 1 Day 1
 🖥️Running the MUX Simulation
 # Let’s go step by step on how you go from RTL code (good_mux.v) to a synthesized netlist using a tool like Yosys.
 Step 1: Write RTL Code
