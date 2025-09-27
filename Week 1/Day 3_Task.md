@@ -223,20 +223,30 @@ yosys
 read_liberty  -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 read_verilog opt_check.v
 synth -top opt_check
-opt_clean -purge
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+flatten
+opt_clean -purge
 show
-
 ```
+<img width="1920" height="909" alt="opt_multiple_module" src="https://github.com/user-attachments/assets/3e06d48a-d25f-4f22-aed8-f2de8e5e8a0e" />
 
-Demonstrates logic factoring and conditional simplification.
+Sub-modules behavior
+```
+sub_module1 → y = a & b
 
-Synthesis can optimize redundant signals and reduce gates.
+sub_module2 → y = a ^ b (XOR)
+```
+Output y = c | (a & b)
+
+
+- Demonstrates logic factoring and conditional simplification.
+
+- Synthesis can optimize redundant signals and reduce gates.
 
 ✅ Key Learning from Lab:
 
-Writing small modules with conditional logic helps understand how synthesis tools optimize combinational circuits.
+:> Writing small modules with conditional logic helps understand how synthesis tools optimize combinational circuits.
 
-Observed constant propagation, Boolean simplification, and logic factoring in action.
+:> Observed constant propagation, Boolean simplification, and logic factoring in action.
 
-Reinforces theoretical concepts from Day 3 combinational optimization notes.
+:> Reinforces theoretical concepts from Day 3 combinational optimization notes.
