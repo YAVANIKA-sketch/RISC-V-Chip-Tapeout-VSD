@@ -482,6 +482,7 @@ gtkwave tb_partial_case_assign.v
 
 ```
 
+syntax error: at line 7 in tb_partial_case_assign.v
 
 Synthesis
 
@@ -582,7 +583,7 @@ gtkwave bad_case.v
 ```
 <img width="1920" height="909" alt="bad_case gtk" src="https://github.com/user-attachments/assets/8d0be228-84ac-475d-978a-9d1b218714c5" />
 
-Synthesized waveform
+GLC
 ```
 iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v bad_case_net.v tb_bad_case.v
 ```
