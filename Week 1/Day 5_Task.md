@@ -6,6 +6,7 @@ Learned about priority logic in RTL and how conditional statements affect synthe
 
 Understood how synthesis tools infer latches for incomplete assignments and missing branches.
 
+
 ⚡ Priority Logic Using IF-ELSE
 
 IF…ELSE statements implement priority logic.
@@ -13,6 +14,7 @@ IF…ELSE statements implement priority logic.
 Caution: missing else branches or incomplete assignments can infer unintended latches.
 
 Proper coding ensures deterministic outputs and avoids synthesis warnings.
+
 
 ⏱️ Case Statements
 
@@ -24,6 +26,7 @@ Solution: always include a default branch to cover all unspecified cases.
 
 Partial assignments inside CASE statements need careful handling to prevent latches.
 
+
 🔹 Comparison: IF…ELSEIF vs CASE
 
 | Feature     | IF…ELSEIF                       | CASE                                                 |
@@ -32,6 +35,7 @@ Partial assignments inside CASE statements need careful handling to prevent latc
 | Latch Risk  | High if branches missing        | High if default missing or partial assignments       |
 | Use Case    | Priority logic                  | Multi-way selection with mutually exclusive options  |
 | Readability | Good for small conditions       | Better for large, mutually exclusive conditions      |
+
 
 🧹 Best Practices
 
@@ -42,6 +46,7 @@ Keep conditional logic simple and deterministic.
 Use CASE statements for multi-way selection and IF-ELSE for priority logic.
 
 Verify synthesis reports to ensure no unintended latches are inferred.
+
 
 # 🧪 Priority Logic and Case Statements Expirements
 
