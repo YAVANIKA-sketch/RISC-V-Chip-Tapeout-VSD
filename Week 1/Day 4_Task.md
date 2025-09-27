@@ -79,4 +79,3 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 show 
 ````
 <img width="884" height="300" alt="ternary synth" src="https://github.com/user-attachments/assets/8bddf9a5-16d8-49d3-b1a3-9a9be956e863" />
-
