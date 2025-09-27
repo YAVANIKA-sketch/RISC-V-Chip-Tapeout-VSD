@@ -1,7 +1,35 @@
+Day 3 – Combinational and Sequential Optimizations
 
-# ✅ Day 3 – Combinational and Sequential Optimizations  
+📘 Introduction to Optimizations
 
-- [x] Introduction to optimizations  
-- [x] Combinational logic optimizations  
-- [x] Sequential logic optimizations  
-- [x] Sequential optimizations for unused outputs  
+Understood the purpose of optimizations in RTL to reduce area, power, and delay.
+
+Learned how synthesis tools simplify designs while preserving functionality.
+
+⚡ Combinational Logic Optimizations
+
+Constant Propagation – simplified logic with constant inputs.
+
+Boolean Simplification – reduced redundant gates using algebraic rules.
+
+Common Sub-expression Elimination – reused repeated logic.
+
+Logic Factoring – restructured expressions to minimize gate count.
+
+⏱️ Sequential Logic Optimizations
+
+Retiming – moved registers across combinational logic to balance delays.
+
+FSM State Reduction – minimized number of states for efficiency.
+
+Register Sharing – reused registers when signals don’t overlap.
+
+Clock Gating – reduced dynamic power by disabling unused registers.
+
+🧹 Sequential Optimizations for Unused Outputs
+
+Removed unused registers/outputs to save area.
+
+Observed how synthesis tools automatically eliminate dead code.
+
+Improved design clarity and timing closure.
